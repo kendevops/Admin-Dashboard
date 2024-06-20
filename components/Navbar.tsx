@@ -36,21 +36,15 @@ const Navbar = () => {
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              <span>Profile</span>
+              <Link href={"/profile"}>Profile</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <span>Billing</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <span>Settings</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <span>Keyboard shortcuts</span>
+              <Link href="/billing">Billing</Link>
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <span>Log out</span>
+            <Link href="/auth">Log out</Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
